@@ -1,8 +1,10 @@
+# test case : CHRL2, WDTBAM.
+
 import urllib2
 from bs4 import BeautifulSoup
 
 print "Enter Problem Code: "
-str_1=raw_input()
+str_1 = raw_input()
 site_name = "https://www.codechef.com/problems/" + str_1
 
 page = urllib2.urlopen(site_name)
