@@ -1,3 +1,3 @@
 # CodechefScraper
 
-Built to make a competitive coders life easy
+Built to make competitive coder's life easy
