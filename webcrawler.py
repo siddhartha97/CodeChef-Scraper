@@ -69,11 +69,3 @@ st = os.stat('run.sh')
 os.chmod('run.sh', st.st_mode | stat.S_IEXEC)
 
 subprocess.call(['./run.sh'],shell=True)
-
-for x in input_text:
-    file_1.write(x + " ")
-
-file_2 = open("realoutput.txt","w");
-
-for x in output_text:
-    file_2.write(x + " ")
