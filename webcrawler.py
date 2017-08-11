@@ -1,4 +1,7 @@
 import urllib2
+import subprocess
+import os
+import stat
 from bs4 import BeautifulSoup
 
 print "Enter Problem Code: "
@@ -46,11 +49,25 @@ print input_text, output_text
 
 
 file_1 = open("realinput.txt","w");
-
 for x in input_text:
-    file_1.write(x + " ")
+    file_1.write(x + "\n ")
+file_1.close();
 
 file_2 = open("realoutput.txt","w");
-
 for x in output_text:
-    file_2.write(x + " ")
+    file_2.write(x + "\n ")
+file_2.close();
+
+print "Enter name of your cpp file: ";
+name = raw_input();
+
+file_3 = open("run.sh" , "w");
+file_3.write("#!/bin/bash" + "\n");
+file_3.write("g++ " + name + "\n");
+file_3.write("./a.out" + " < " + "realinput.txt" + " > " + "output.txt" + "\n");
+file_3.write("exit 0");
+
+st = os.stat('run.sh')
+os.chmod('run.sh', st.st_mode | stat.S_IEXEC)
+
+os.system('./run.sh')
