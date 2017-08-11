@@ -1,10 +1,8 @@
-# test case : CHRL2, WDTBAM.
-
 import urllib2
 from bs4 import BeautifulSoup
 
 print "Enter Problem Code: "
-str_1 = raw_input()
+str_1=raw_input()
 site_name = "https://www.codechef.com/problems/" + str_1
 
 page = urllib2.urlopen(site_name)
@@ -29,11 +27,12 @@ flag_1 = 0
 #storing input and output values separately
 
 for x in str_2.split():
-    if x == "Input:":
+
+    if x == "Input:" or x == "Input":
         flag_0 = 1
         flag_1 = 0
         continue
-    if x == "Output:":
+    if x == "Output:" or x == "Output":
         flag_0 = 0
         flag_1 = 1
         continue
@@ -44,3 +43,14 @@ for x in str_2.split():
 
 
 print input_text, output_text
+
+
+file_1 = open("realinput.txt","w");
+
+for x in input_text:
+    file_1.write(x + " ")
+
+file_2 = open("realoutput.txt","w");
+
+for x in output_text:
+    file_2.write(x + " ")
