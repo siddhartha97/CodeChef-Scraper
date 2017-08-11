@@ -63,9 +63,11 @@ name = raw_input();
 
 file_3 = open("run.sh" , "w");
 file_3.write("#!/bin/bash" + "\n");
-file_3.write("g++ " + name + "\n" + "exit 0");
+file_3.write("g++ " + name + "\n");
+file_3.write("./a.out" + " < " + "realinput.txt" + " > " + "output.txt" + "\n");
+file_3.write("exit 0");
 
 st = os.stat('run.sh')
 os.chmod('run.sh', st.st_mode | stat.S_IEXEC)
 
-subprocess.call(['./run.sh'],shell=True)
+os.system('./run.sh')
