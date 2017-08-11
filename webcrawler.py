@@ -55,7 +55,7 @@ file_1.close();
 
 file_2 = open("realoutput.txt","w");
 for x in output_text:
-    file_2.write(x + "\n ")
+    file_2.write(x  )
 file_2.close();
 
 print "Enter name of your cpp file: ";
@@ -65,9 +65,12 @@ file_3 = open("run.sh" , "w");
 file_3.write("#!/bin/bash" + "\n");
 file_3.write("g++ " + name + "\n");
 file_3.write("./a.out" + " < " + "realinput.txt" + " > " + "output.txt" + "\n");
+file_3.write("diff " + "-s output.txt realoutput.txt" +"\n");
 file_3.write("exit 0");
 
 st = os.stat('run.sh')
 os.chmod('run.sh', st.st_mode | stat.S_IEXEC)
 
-os.system('./run.sh')
+from subprocess import call
+import shlex
+call(shlex.split('bash run.sh'))
