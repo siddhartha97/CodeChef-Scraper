@@ -1,3 +1,3 @@
 # CodechefScraper
 
-Built to make competitive coder's life easy
+Small python code used to parse sample test cases locally.
