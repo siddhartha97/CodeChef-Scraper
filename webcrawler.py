@@ -73,7 +73,6 @@ file_3 = open("run.sh" , "w");
 file_3.write("#!/bin/bash" + "\n");
 file_3.write("g++ " + name + "\n");
 file_3.write("./a.out" + " < " + "realinput.txt" + " > " + "output.txt" + "\n");
-file_3.write("diff " + "-s output.txt realoutput.txt "  + "> diffText.txt" + "\n");
 file_3.write("g++ " + "filechecker.cpp -o check.out" + "\n");
 file_3.write("./check.out"+"\n");
 file_3.write("exit 0");
@@ -83,4 +82,5 @@ os.chmod('run.sh', st.st_mode | stat.S_IEXEC)
 
 from subprocess import call
 import shlex
+call(shlex.split('bash run.sh'))
 call(shlex.split('bash run.sh'))
