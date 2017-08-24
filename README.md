@@ -6,6 +6,6 @@ Running the file: Make sure the .cpp and the .py files are in the same directory
 
 Execution: 
 
-```python webcrawler.py
+```python webcrawler.py ```
 
-  ./run.sh 
+``` ./run.sh ```
