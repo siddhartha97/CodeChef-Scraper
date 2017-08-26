@@ -8,4 +8,11 @@ Execution:
 
 ```python webcrawler.py ```
 
+For every subsequent compilation of the program execute the following shell script: 
+
 ``` ./run.sh ```
+
+
+Future Work: 
+
+Handling of multiple input files and other test cases.
