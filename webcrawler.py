@@ -52,10 +52,6 @@ for x in preText.split():
     if flag_1 == 1 and flag_0 == 0:
         output_text.append(x)
 
-
-print input_text, output_text
-
-
 file_1 = open("realinput.txt","w");
 for x in input_text:
     file_1.write(x + "\n ")
