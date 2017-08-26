@@ -16,7 +16,6 @@ Demonstration of the project can be found here:
 
 https://youtu.be/gVnlKnDRTF4
 
-
 Future Work: 
 
 Handling of multiple input files and other test cases.
