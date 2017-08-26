@@ -12,6 +12,10 @@ For every subsequent compilation of the program execute the following shell scri
 
 ``` ./run.sh ```
 
+Demonstration of the project can be found here: 
+
+https://youtu.be/gVnlKnDRTF4
+
 
 Future Work: 
 
