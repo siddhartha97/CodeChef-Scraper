@@ -25,7 +25,7 @@ int main()
 		if(strcmp(string1,string2) != 0)
 		{
 			flag = 1;
-			cout << j << "nd output doesnt match" << "\n";
+			cout <<"Output "<<j<< " doesnt match" << "\n";
 			cout << "Your Output:   " << string1 << "\n";
 			cout << "Expected Output:  " << string2 << "\n";
 		}
