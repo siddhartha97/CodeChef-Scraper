@@ -6,9 +6,7 @@
 
 + Execution:  ```python webcrawler.py ```
 
-+ For every subsequent compilation of the program execute the following shell script: 
-
-``` ./run.sh ```
++ For every subsequent compilation of the program execute the following shell script:  ``` ./run.sh ```
 
 + Demonstration of the project can be found here: https://youtu.be/gVnlKnDRTF4
 
