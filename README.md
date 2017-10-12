@@ -8,7 +8,7 @@
 
 + For every subsequent compilation of the program execute the following shell script:  ``` ./run.sh ```
 
-+ Demonstration of the project can be found here: [Click Here] (https://youtu.be/gVnlKnDRTF4)
++ Demonstration of the project can be found here: [video](https://youtu.be/gVnlKnDRTF4)
 
 + Contributors : Siddhartha Chowdhuri , Elvis Menezes.
 
