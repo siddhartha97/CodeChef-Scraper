@@ -14,4 +14,4 @@
 
 + Future Work:  Handling of multiple input files and other test cases.
 
-<a href="https://imgflip.com/gif/20hze0"><img src="https://i.imgflip.com/20hze0.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/20hze0" style="text-align:center"><img src="https://i.imgflip.com/20hze0.gif" title="made at imgflip.com"/></a>
